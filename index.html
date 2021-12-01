@@ -141,12 +141,67 @@
 					 <div class="my-account-wrapper">
 						<a class="my-account" href="login-and-register.html" onclick="openForm-lk()"><img src="assets/images/icon-user.png" style="width: 45px; height: auto;"></a>
 					 </div>
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
 					 <!-- Корзина -->
 					 <ul class="site-header-cart menu">
                   <li class="mini-cart">
                      <div class="mini-cart-toggle">
                         <a class="cart-contents" href="cart.html" title="View your shopping cart"><span class="amount"><span class="price-label">Сумма:</span>1250 р.</span> <span class="count">1</span></a>
                         <div class="widget woocommerce widget_shopping_cart">
+							<!-- Левый блок с подарками -->
+					<div class="information-col pull-xs-left">
+                    
+                                        <div class="basket-gift-container">
+                      <div class="progress-container in-progress" style="display: block;">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                        <div class="progress-bar-content">
+                          <div>Если потратите еще</div>
+                          <div class="sum-to-gift"><span>100</span><span class="currency">₽</span></div>
+                          <div>вы получите подарок</div>
+                        </div>
+                      </div>
+                      <div class="progress-container progress-completed" style="display: none;">
+                        <div style="width: 100%;" class="progress-bar complete use"></div>
+                        <div class="progress-bar-content"><a href="#" data-modal="gift-modal" class="btn-get-gift md-trigger">Выбрать подарок</a>
+                        </div>
+                      </div>
+                      <div class="progress-container progress-get-another" style="display: none;">
+                        <div style="width: 100%;" class="progress-bar complete reuse"></div>
+                        <div class="progress-bar-content"><a href="#" data-modal="gift-modal" class="btn-get-gift another md-trigger">Выбрать другой</a>
+                        </div>
+
+                      </div>
+                    </div>
+                                        <div class="recommendation-container no-recommendation" style="display: none;">
+                      <div class="text-content">
+                        <div class="info-col-content">
+	                       <div class="title">Быстро</div>
+<div class="text">Время доставки заказ за 45 минут</div>                        </div>
+                        <div class="info-col-content">
+	                        <div class="title">Вкусно</div>
+<div class="text">Мы готовим только из свежих продуктов.</div>                        </div>
+                        <div class="info-col-content">
+	                        <div class="title">Бесплатная доставка</div>
+<div class="text">Минимальный сумма заказа 300 рублей.</div>                        </div>
+                      </div>
+                      <footer>
+                        <div class="phone">+7 (999) 111-11-11</div>
+                        <div class="work-time">Доставка с 9.00 до 22.00</div>
+                      </footer>
+                    </div>
+                  </div>
+				  
+				  
+				  
+				  
                            <div class="widget_shopping_cart_content">
                               <ul class="cart_list product_list_widget ">
                                  <li class="mini_cart_item">
@@ -177,6 +232,9 @@
                            </div>
                         </div>
                     </div>
+					
+					
+					
                   </li>
                </ul>
 			</div>
