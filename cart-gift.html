@@ -3,19 +3,18 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Pizzaro</title>
+      <title>Доп товары</title>
       <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
       <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" media="all" />
       <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" media="all" />
       <link rel="stylesheet" type="text/css" href="assets/css/font-pizzaro.css" media="all" />
       <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
-      <link rel="stylesheet" type="text/css" href="assets/css/style-form.css" media="all" />
       <link rel="stylesheet" type="text/css" href="assets/css/colors/red.css" media="all" />
-      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.min.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.min.css" media="all" />      
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CYanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
       <link rel="shortcut icon" href="assets/images/fav-icon.png">
    </head>
-   <body class="page-template-template-homepage-v1 home-v1">
+   <body class="full-width grid-view columns-3 archive woocommerce-page">
       <div id="page" class="hfeed site">
          <header id="masthead" class="site-header header-v1"  style="background-image: none; ">
             <div class="col-full">
@@ -28,7 +27,10 @@
                      <a href="index.html" class="custom-logo-link" rel="home">
 						<img src="assets/images/logo-big.svg" class="logo-top-desctop">
 						<img src="assets/images/logo.svg" class="logo-top-mobile">
-
+                        <!--<svg class="pizzaro-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52.39">
+                           <path class="cls-1" d="M51.33,16.15A5.61,5.61,0,0,0,56,10.88a4,4,0,0,0-4.67-4,5.38,5.38,0,0,0-4.67,5.22A4.07,4.07,0,0,0,51.33,16.15ZM21.42,3.69C6.1,5.62,0,17.8,0,25.47a16.41,16.41,0,0,0,2.6,8.68l5.62-4.92A11,11,0,0,1,7,24.48c0-5.22,5-13,14.42-14.18,8.17-1,10.5,4.17,10.5,8.48,0,8.21-8.17,14.51-14.42,11.78l3.23-8.35A10.87,10.87,0,0,1,25,16.72l-1.54-4.39c-5.3.67-9,5.19-10.5,9.05L1.17,52.4,9.6,51.34l5.73-15.11C29.59,40.35,40,28.8,40,17.72,40,9.67,34.47,2.05,21.42,3.69ZM197,12.22c-2.17,4-4.77,6.3-7.37,7.06A25.1,25.1,0,0,0,192,9.22c0-6.18-3.55-9.47-10-8.66-8.82,1.11-13.92,9-15.71,15.8-4,7.28-6.48,10.81-7.94,11-0.74.09-2-.6,0.42-6.88l1.48-4a8,8,0,0,0,.64-2.74c0-4-6.52-6.16-8.7-7.81L154,1.49,150.53,0c-2.17,1-5,4.2-5,6.92a4,4,0,0,0,1.64,3c-1.54,3.6-3,6.83-4.19,9.06h0c-3.82,7-7.42,11.22-9.54,11.49-1,.12-1.86-0.57.53-6.89l6.58-17.14-9.92,4.87s-1.17-4.17-6.31-3.52c-6.81.86-11.07,8.78-13.14,15.62-3.48,6.34-6.05,7.74-8,8-2.7.34-4.67-1.38-7.11-1.45l15.54-16.19-2.76-3.33c-5.2,2.63-9.17.46-13.52,1-6.36.8-7.58,6.71-12,15.05h0c-3.61,6.74-6.26,8.19-8.22,8.44-2.7.34-4.67-1.38-7.11-1.45L83.56,17.34,80.81,14c-5.2,2.63-9.17.46-13.52,1-6.36.8-7.58,6.71-12,15.05h0c-3.76,7-7.42,11.22-9.54,11.49-0.9.11-1.86-.51,0.58-6.9l6.52-17.13L44.38,18.6l-6,15.62c-3.87,10.13-.48,13.54,4.35,12.94,6.1-.77,11.4-7.62,15.48-15.33h0c3.45-6.51,4.56-7.93,7-8.24,2.23-.28,4.19.48,5.83,0.6L54.51,41.31l2.76,3.33c5.57-5.28,7.05-.2,13.63-1,6.73-.85,11-7.09,15.43-15.32h0c3.45-6.51,4.56-7.93,7-8.24,2.23-.28,4.19.48,5.83,0.6L82.61,37.77l2.76,3.33c5.57-5.29,7.05-.2,13.63-1,4.39-.55,7.72-3.4,10.74-7.59,0.25,3.46,2.25,6,6,5.49,4.67-.59,8.32-5.47,8.32-5.47s0.69,4.34,6.2,3.64c6.47-.81,11.61-7.59,15.75-15.36h0a93.45,93.45,0,0,0,4.24-9.11c1.43,1,2.6,1.86,2.6,2.92a5.62,5.62,0,0,1-.48,1.93L150.64,21c-3.82,9.91.58,12.45,4.72,11.93s7.48-4.12,10.53-8.89c0.9,4.5,4.34,7,9.93,6.31a16.62,16.62,0,0,0,11.08-6.67c5.41-.25,10.23-4.43,13.1-9.75A3.52,3.52,0,0,0,197,12.22ZM125,26.2s-2.44,4.14-5.36,4.51c-1.06.13-1.7-.37-1.7-1.76,0-3.41,3.92-13.87,8.11-14.4,2.33-.29,2.39,2.68,2.39,2.68Zm57.9-12.09a4.93,4.93,0,0,0-4.51,4.83,3.79,3.79,0,0,0,1.17,2.84c-1.17,1.69-2.49,2.93-3.76,3.09S173.7,24,173.7,22.3c0-3.94,4.08-15.65,8.27-16.18C183.09,6,184,6.66,184,8.63A18.75,18.75,0,0,1,182.87,14.11Z" transform="translate(0 -0.01)"></path>
+                        </svg>
+						-->
                      </a>
                   </div>
 				  
@@ -108,10 +110,6 @@
                            <li class="menu-item "><a href="catalog.html"><i class="po po-drinks"></i>Торты</a></li>
                            <li class="menu-item "><a href="catalog.html"><i class="po po-drinks"></i>Напитки</a></li>
                         </ul>
-						<ul id="menu-main-menu" class="menu nav-menu">
-							<li class=""><a title="О нас" class="menu-item" href="about.html">О нас</a></li>
-							<li class=""><a title="Контакты" class="menu-item" href="contact.html">Контакты</a></li>       
-        </ul>
                      </div>
                   </nav>
 			
@@ -136,55 +134,14 @@
 				
 				<div class="header-my-account-wrapper">				
 					 <div class="my-account-wrapper">
-						<a class="my-account" href="login-and-register.html" onclick="openForm-lk()"><img src="assets/images/icon-user.png" style="width: 45px; height: auto;"></a>
+						<a class="my-account" href="login-and-register.html"><img src="assets/images/icon-user.png" style="width: 45px; height: auto;"></a>
 					 </div>
-					 
-					 
-					 
-					 
-					 
-					 
-					 
-					 
-					 
 					 <!-- Корзина -->
 					 <ul class="site-header-cart menu">
                   <li class="mini-cart">
                      <div class="mini-cart-toggle">
                         <a class="cart-contents" href="cart.html" title="View your shopping cart"><span class="amount"><span class="price-label">Сумма:</span>1250 р.</span> <span class="count">1</span></a>
                         <div class="widget woocommerce widget_shopping_cart">
-						
-						
-						
-							<!-- Левый блок с подарками -->
-					<div class="information-col pull-xs-left">
-                    
-                                        <div class="basket-gift-container">
-                      <div class="progress-container in-progress" style="display: block;">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                        <div class="progress-bar-content">
-                          <div>Если потратите еще</div>
-                          <div class="sum-to-gift"><span>100</span>&nbsp;<span class="currency">₽</span></div>
-                          <div>вы получите подарок</div>
-                        </div>
-                      </div>
-                      <div class="progress-container progress-completed" style="display: none;">
-                        <div style="width: 100%;" class="progress-bar complete use"></div>
-                        <div class="progress-bar-content"><a href="#" data-modal="gift-modal" class="btn-get-gift md-trigger">Выбрать подарок</a>
-                        </div>
-                      </div>
-                      <div class="progress-container progress-get-another" style="display: none;">
-                        <div style="width: 100%;" class="progress-bar complete reuse"></div>
-                        <div class="progress-bar-content"><a href="#" data-modal="gift-modal" class="btn-get-gift another md-trigger">Выбрать другой</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-				  
-				  
-				  
-				  
                            <div class="widget_shopping_cart_content">
                               <ul class="cart_list product_list_widget ">
                                  <li class="mini_cart_item">
@@ -215,9 +172,6 @@
                            </div>
                         </div>
                     </div>
-					
-					
-					
                   </li>
                </ul>
 			</div>
@@ -227,19 +181,226 @@
                
             </div>
          </header>
-         <div id="content" class="site-content" tabindex="-1" >
+         <div id="content" class="site-content" tabindex="-1">
             <div class="col-full">
+               <div class="pizzaro-sorting">
+                  <div class="food-type-filter">
+				  <!--
+                     <div class="clear-food-type-filter chosen"><a href="#">Показать все</a>
+                     </div>
+					 -->
+                     <div class="widget woocommerce widget_layered_nav">
+                        <ul>
+                           <li class="wc-layered-nav-term "><a href="#">Мясные</a> <span class="food-type-icon"><!--<i class="fa fa-cutlery"></i>--></span></li>
+						   <li class="wc-layered-nav-term "><a href="#">Вегетарианские</a> <span class="food-type-icon"><!--<i class="po po-veggie-icon"></i>--></span></li>
+                           <li class="wc-layered-nav-term "><a href="#">Острые</a> <span class="food-type-icon"><!--<i class="fa fa-fire"></i>--></span></li>
+                           
+                        </ul>
+                     </div>
+                     <div class="create-your-own" ><a href="#"  onclick="openForm()" id="ingridients-filter-open">Фильтр по ингредиентам</a></div>
+                  </div>
+               </div>
                <div id="primary" class="content-area">
-                  
+                  <main id="main" class="site-main" >
+                     <div class="columns-3">
+                        <ul class="products">
+                           <li class="product first">
+                              <div class="product-outer">
+                                 <div class="product-inner">
+                                    <div class="product-image-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                       <img src="assets/images/products/p1.jpg" class="img-responsive" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="product-content-wrapper">
+										<a href="card.html" class="woocommerce-LoopProduct-link">
+                                          <h3>Пицца Маргарита</h3>
+										  </a>
+                                          <div itemprop="description">
+                                             <p style="max-height: none;">Соус томатный, моцарелла, соус песто, помидор, орегано.</p>
+                                          </div>
+										  
+                                          <div  class="yith_wapo_groups_container">
+										  <!--
+                                             <div  class="ywapo_group_container ywapo_group_container_radio form-row form-row-wide " data-requested="1" data-type="radio" data-id="1" data-condition="">
+                                                <h3><span>Выберите вкус</span></h3>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">Апельсин</span></span>
+                                                </div>
+                                                <div class="ywapo_input_container ywapo_input_container_radio modif-active">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">Вишня</span></span>
+                                                </div>
+												<div class="ywapo_input_container_radio_more" id="modifikator-more">
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">еще</span></span>
+                                                </div>
+                                             </div>
+											 -->
+											 <div class="ywapo_group_container ywapo_group_container_radio form-row form-row-wide " data-requested="1" data-type="radio" data-id="1" data-condition="">
+												<a href="card.html" class="woocommerce-LoopProduct-link">
+																   <div class="ywapo_input_container ywapo_input_container_radio">
+																		<span class="ywapo_label_price"> <span class="woocommerce-Price-amount amount">320 р.</span></span>
+																	</div>
+											</a>
+											</div>
+                                          </div>
+                                       
+                                       <div class="hover-area">
+                                          <a rel="nofollow" href="single-product-v1.html" data-quantity="1" data-product_id="51" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Выбрать свойства</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- /.product-outer -->
+                           </li>
+                           <!-- /.products -->
+                           <li class="product ">
+                              <div class="product-outer">
+                                 <div class="product-inner">
+                                    <div class="product-image-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                       <img src="assets/images/products/p2.jpg" class="img-responsive" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="product-content-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                          <h3>Trio Cheese</h3>
+                                          <div itemprop="description">
+                                             <p style="max-height: none;">Extra-virgin olive oil, garlic, mozzarella, mushrooms and olives.</p>
+                                          </div>
+                                          <div  class="yith_wapo_groups_container">
+                                             <div  class="ywapo_group_container ywapo_group_container_radio form-row form-row-wide " data-requested="1" data-type="radio" data-id="1" data-condition="">
+                                                <h3><span>Pick Size</span></h3>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">22 cm</span></span>
+                                                   <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19</span></span>
+                                                </div>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">29 cm</span></span>
+                                                   <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25</span></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <div class="hover-area">
+                                          <a rel="nofollow" href="#" data-quantity="1" data-product_id="51" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Добавить еще</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- /.product-outer -->
+                           </li>
+                           <!-- /.products -->
+                           <li class="product last">
+                              <div class="product-outer">
+                                 <div class="product-inner">
+                                    <div class="product-image-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                       <img src="assets/images/products/p3.jpg" class="img-responsive" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="product-content-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                          <h3>Apricot Chicken</h3>
+                                          <div itemprop="description">
+                                             <p style="max-height: none;">Extra-virgin olive oil, garlic, mozzarella, mushrooms and olives.</p>
+                                          </div>
+                                          <div  class="yith_wapo_groups_container">
+                                             <div  class="ywapo_group_container ywapo_group_container_radio form-row form-row-wide " data-requested="1" data-type="radio" data-id="1" data-condition="">
+                                                <h3><span>Pick Size</span></h3>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">22 cm</span></span>
+                                                   <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19</span></span>
+                                                </div>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">29 cm</span></span>
+                                                   <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25</span></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <div class="hover-area">
+                                          <a rel="nofollow" href="single-product-v1.html" data-quantity="1" data-product_id="51" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Добавить в&nbsp;корзину</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- /.product-outer -->
+                           </li>
+                           <!-- /.products -->
+                           <li class="product first">
+                              <div class="product-outer">
+                                 <div class="product-inner">
+                                    <div class="product-image-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                       <img src="assets/images/products/p4.jpg" class="img-responsive" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="product-content-wrapper">
+                                       <a href="card.html" class="woocommerce-LoopProduct-link">
+                                          <h3>Italiano Original</h3>
+                                          <div itemprop="description">
+                                             <p style="max-height: none;">Extra-virgin olive oil, garlic, mozzarella, mushrooms and olives.</p>
+                                          </div>
+                                          <div  class="yith_wapo_groups_container">
+                                             <div  class="ywapo_group_container ywapo_group_container_radio form-row form-row-wide " data-requested="1" data-type="radio" data-id="1" data-condition="">
+                                                <h3><span>Pick Size</span></h3>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">22 cm</span></span>
+                                                   <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19</span></span>
+                                                </div>
+                                                <div class="ywapo_input_container ywapo_input_container_radio">
+                                                   
+                                                   <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">29 cm</span></span>
+                                                   <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25</span></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <div class="hover-area">
+                                          <a rel="nofollow" href="single-product-v1.html" data-quantity="1" data-product_id="51" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Добавить в&nbsp;корзину</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- /.product-outer -->
+                           </li>
+                           <!-- /.products -->
+                           
+                           <!-- /.products -->
+                           
+                           <!-- /.products -->
+                           
+                           <!-- /.products -->
+                          
+                           <!-- /.products -->
+                           
+                           <!-- /.products -->
+                        </ul>
+                     </div>
+                     <nav class="woocommerce-pagination">
+                        <ul class="page-numbers">
+                           <li><span class="page-numbers current">1</span></li>
+                           <li><a class="page-numbers" href="#">2</a></li>
+                           <li><a class="page-numbers" href="#">3</a></li>
+                           <li><a class="next page-numbers" href="#">Next Page &nbsp;&nbsp;&nbsp;→</a></li>
+                        </ul>
+                     </nav>
+                  </main>
                   <!-- #main -->
                </div>
                <!-- #primary -->
             </div>
             <!-- .col-full -->
          </div>
-         <!-- #content -->
          
-		 <footer id="colophon" class="site-footer footer-v2" >
+         <footer id="colophon" class="site-footer footer-v2" >
             <div class="col-full">
                <div class="footer-row row vertical-align">
                   <div class="footer-store-info">
@@ -337,10 +498,26 @@
             </div>
             <!-- .col-full -->
          </footer>
-		 
-
+         <!-- #colophon -->
       </div>
 	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	  <div class="ingridients-filter" id="ingridients-filter-main" style="">
 	  <div class="ingridients-filter-arrow" style="left: 349.305px;"></div>
 	  <div class="webui-popover-inner">
@@ -433,115 +610,15 @@
                 </div>
     </form>
               </div></div></div></div>
-
-
-<!-- Уведомление о добавлении товара к ворзину -->
-<div class="vendor-notification">
-	<div class="vue-notification-group">
-		<span name="vn-fade">Товар добавлен в корзину</span>
-	</div> 
-</div>
-
-
-<!-- Окно Вход/Регистрация для неавторизованных пользователей -->			  
-<div id="v--modal-overlay-authorization" style="display: none;">	  
-<div class="v--modal-overlay scrollable">
-	<div class="v--modal-background-click">
-		<div class="v--modal-top-right">
-		</div> 
-		<div role="dialog" class="v--modal-box v--modal">
-				<div class="row-sm justify-content-center mb-4">
-					<div class="col-auto">
-						<a href="#" class="btn btn-sm">
-						<span>Войти</span>
-						</a>
-					</div> 
-					<div class="col-auto">
-						<a href="#" class="btn btn-sm active">
-							<span>Регистрация</span>
-						</a>
-					</div>
-				</div> 
-				<!-- Вход -->
-			<form class="form-lk" id="form-entry" style="display: none;">
-				<div>
-					<div class="mb-4">
-						<label class="form-item">
-							<div class="mb-1">Номер телефона</div> 
-							<input type="text" placeholder="" required="required" class="form-control-lk" id="user_phone">
-						</label> 
-						<label class="form-item">
-							<div class="mb-1">Пароль</div> 
-							<input type="password" required="required" class="form-control-lk">
-						</label>
-					</div> 
-					<button type="submit" class="btn-primary btn-block mb-3">Войти</button> 
-					<a href="#" class="link-forgot-password">Забыли пароль?</a>
-				</div>
-			</form> 
-			<!-- Регистрация -->
-			<form class="form-lk" id="form-reg">
-				<div>
-					<div class="mb-4">
-						<label class="form-item">
-							<div class="mb-1">Номер телефона*</div> 
-							<input type="text" placeholder="" required="required" class="form-control-lk" id="user_phone-reg">
-						</label> 
-							<label class="form-item error">
-								<div class="mb-1">Email*</div> 
-								<input type="email" required="required" class="form-control-lk">
-							</label> 
-							<label class="form-item">
-								<div class="mb-1">Пароль*</div> 
-								<input type="password" required="required" class="form-control-lk">
-							</label>
-							<label class="form-item">
-								<div class="mb-1">Пароль еще раз*</div> 
-								<input type="password" required="required" class="form-control-lk">
-							</label>
-					</div> 
-						<label class="custom-checkbox-sm mb-4">
-							<input type="checkbox" required="required"> 
-							<div>Я ознакомлен и согласен <a href="/privacy/" class="privacy-form">с условиями использования и обработки моих персональных данных</a></div></label> 
-						<button type="submit" class="btn-primary btn-block">Регистрация</button>
-				</div>
-			</form> 
-	</div>
-	</div>
-</div>			  
-</div>		
-
-
-<!-- Окно личного кабинета для авторизованных пользователей -->			  
-<div id="v--modal-overlay-lk" style="display: none;">			  
-<div class="v--modal-overlay scrollable">
-	<div class="v--modal-background-click">
-		<div class="v--modal-top-right">
-		</div> 
-		<div role="dialog" class="v--modal-box v--modal">
-			<div class="text-center">
-				<img src="assets/images/user-auth.png" alt="avatar" class="avatar"> 
-				<span class="btn-close"></span> 
-				<div class="bonuses">
-					Бонусов - <span class="bonuses-sum">299</span>
-					<span class="currency"> р.</span>
-				</div> 
-				<ul class="list">
-					<li><a href="/personal/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span>Личный кабинет</span></a></li> 
-					<li><a href="/personal/orders/" class=""><span>История заказов</span></a></li> 
-					<li><a href="/personal/bonuses/" class=""><span>Мои бонусы</span></a></li> 
-				</ul> 
-				<button class="btn-simple btn-sm px-5">Выйти</button>
-			</div>	
-		</div>
-	</div>
-</div>			  
-</div>	
-		  
-				  
-			  
-			  		  
-			  	  
+	  
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/tether.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+      
+      <script type="text/javascript" src="assets/js/social.share.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script type="text/javascript" src="assets/js/scripts.min.js"></script>
 
 <script>
 	function openForm() {
@@ -553,13 +630,125 @@
 	}
 </script>
 
-<script type="text/javascript">
-$("#user_phone").mask("+7 (999) 999 - 9999",{autoclear: false, completed:function(){alert("ОК!");}});
-</script>
 
-<script type="text/javascript">
-$("#user_phone-reg").mask("+7 (999) 999 - 9999",{autoclear: false, completed:function(){alert("ОК!");}});
-</script>
+
+
+
+
+
+<!-- окно с подарками -->
+<div id="gift-modal" class="md-modal md-effect-3 md-show">
+<div class="mod-container-bg"></div>
+		<div class="md-content">
+		<a class="close_modif" href="#">×</a>
+			<div class="modal-title">Ваш подарок</div>
+			<div class="scroll-wrapper bd-scrollbar scrollbar-macosx" style="position: relative;">
+				<div class="bd-scrollbar scrollbar-macosx scroll-content scroll-scrollx_visible scroll-scrolly_visible" style="">
+				
+			<div class="gift-container">
+			<div class="gift-row">
+					<div class="col-xl-4">
+						  <div class="product gift">
+							<div class="mask"></div>
+							<div class="back-side">
+							  <div class="stars"></div>
+							  <div class="gift-in-basket-text font-fix">
+								  <div>Подарок</div>
+								  <div>в корзине</div>
+							  </div>
+							  <button class="get-another-gift-btn font-fix" style="display: none;">Выбрать другой</button>
+							</div>
+							<div class="front-side">
+							  <div class="preview">
+									  <img src="https://alloresto.ru/upload/iblock/82a/ms6rw5ifbpgx7qg2rmepi28cewuvosxi.jpg">
+							  </div>
+							  <div class="product-info"><span class="product-title font-fix">Десерт Картошка</span>
+								<div class="product-description">Классический рецепт пирожного картошка в виде эскимо</div>
+							  </div>
+								<div class="gift-progress-info" data-limit="2000">
+									<div class="progress-container">
+										<div class="progress-bar-content">
+											<div class="native_text">Доступно при заказе от 2 000	<span class="currency">₽</span></div>
+											<div class="hover_text">Не хватает <span class="font-fix"><span class="gift-progress-value">340</span><span class="currency">₽</span></span></div>
+										</div>
+									</div>
+								</div>
+							  <button class="get-gift-btn" style="display: none;">Выбрать</button>
+							</div>
+						  </div>
+						</div>
+					<div class="col-xl-4">
+						  <div class="product gift active">
+							<div class="mask"></div>
+							<div class="back-side">
+							  <div class="stars"></div>
+							  <div class="gift-in-basket-text font-fix">
+								  <div>Подарок</div>
+								  <div>в корзине</div>
+							  </div>
+							  <button class="get-another-gift-btn font-fix">Выбрать другой</button>
+							</div>
+							<div class="front-side">
+							  <div class="preview">
+                        <img src="https://alloresto.ru/upload/iblock/c51/qod7zapuzhvzzjws8k65nwph12cq8f3i.jpg">
+							  </div>
+							  <div class="product-info"><span class="product-title font-fix">Ролл Дракон белый</span>
+								<div class="product-description">Рис,нори,сливочный сыр, омлет, огурец, лук зеленый, тигровая креветка, тобико</div>
+							  </div>
+								<div class="gift-progress-info" data-limit="1500" style="display: none;">
+									<div class="progress-container">
+										<div class="progress-bar-content">
+											<div class="native_text">Доступно при заказе от 1 500 <span class="currency">₽</span></div>
+											<div class="hover_text">Не хватает <span class="font-fix"><span class="gift-progress-value">100</span><span class="currency">₽</span></span></div>
+										</div>
+									</div>
+								</div>
+							  <button class="get-gift-btn" style="display: none;">Выбрать</button>
+							</div>
+						  </div>
+						</div>
+					<div class="col-xl-4">
+						  <div data-id="5846" class="product gift">
+							<div class="mask"></div>
+							<div class="back-side">
+							  <div class="stars"></div>
+							  <div class="gift-in-basket-text font-fix">
+								  <div>Подарок</div>
+								  <div>в корзине</div>
+							  </div>
+							  <button class="get-another-gift-btn font-fix">Выбрать другой</button>
+							</div>
+							<div class="front-side">
+							  <div class="preview">
+                        <img src="https://alloresto.ru/upload/iblock/455/cigacfgvc80w41371cnw2lw9827vrgd5.jpg">
+							  </div>
+							  <div class="product-info"><span class="product-title font-fix">Пицца Маргарита</span>
+								<div class="product-description">Колбаски пепперони, моцарелла, пармезан, базилик, томатный соус</div>
+							  </div>
+								<div class="gift-progress-info" data-limit="1000" style="display: none;">
+									<div class="progress-container">
+										<div class="progress-bar-content">
+											<div class="native_text">Доступно при заказе от 1 000	<span class="currency">₽</span></div>
+											<div class="hover_text">Не хватает <span class="font-fix"><span class="gift-progress-value">240</span><span class="currency">₽</span></span></div>
+										</div>
+									</div>
+								</div>
+							  <button class="get-gift-btn" style="">Выбрать</button>
+							</div>
+						  </div>
+						</div>
+					
+					  </div>
+					</div>			
+		</div>
+		<div class="scroll-element scroll-x scroll-scrollx_visible scroll-scrolly_visible" style=""><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 768px; left: 0px;"></div></div></div>
+		<div class="scroll-element scroll-y scroll-scrollx_visible scroll-scrolly_visible" style=""><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 245px; top: 0px;"></div></div></div></div>
+		</div>
+	</div>
+
+	
+	
+	
 
    </body>
 </html>
