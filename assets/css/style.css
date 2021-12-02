@@ -3940,7 +3940,9 @@ select {
 .gift-cart-toggle svg path {
   fill: red;
 }
-
+.common-block {
+  padding: 30px 0px;
+}
 
 
 
