@@ -3655,7 +3655,7 @@ select {
   background-color: #ffffff;
   position: absolute;
   right: 0;
-  top: 200px;
+  top: 247px;
 }
 .gift-sticky.sticky {
   position: fixed;
@@ -3915,8 +3915,31 @@ select {
   font-size: 33px;
   padding-left: 5px;
 }
-
-
+.gift-cart-toggle {
+  cursor: pointer;
+  width: 33px;
+  height: 34px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  z-index: 1000;
+}
+.gift-cart-toggle svg {
+  width: 25px;
+    height: 23px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -4px;
+}
+.gift-cart-toggle svg path {
+  fill: red;
+}
 
 
 
