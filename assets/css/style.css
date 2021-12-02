@@ -3607,6 +3607,21 @@ select {
   display: none;
   width: 100%;
 }
+.gift-container .product.gift .back-side:after {
+    content: ' ';
+    width: 170px;
+    height: 228px;
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 80px;
+    background: url(./images/selected-gift-inner.png) no-repeat;
+}
 
 
 
