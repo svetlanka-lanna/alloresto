@@ -3943,9 +3943,18 @@ select {
 .common-block {
   padding: 30px 0px;
 }
-.orderby {
 
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 992px) {
@@ -7295,7 +7304,9 @@ a.reset_variations {
 .site-header .widget_shopping_cart p.total, .site-header .widget_shopping_cart p.buttons, .site-header .widget_shopping_cart li {
   padding-left: 1.41575em;
   padding-right: 1.41575em; }
-
+  .widget_shopping_cart p.buttons {
+    margin-top: 80px;
+  }
 .widget_layered_nav li {
   margin-bottom: 0.6180469716em; }
   .widget_layered_nav li:before {
@@ -8207,7 +8218,7 @@ dl.variation {
     display: none; }
 .bonuses-payment label {
     display: none; }
-  table.cart td.actions .coupon {
+  table.cart td.actions .coupon, .widget_shopping_cart_content .coupon {
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: none; }
@@ -15663,6 +15674,21 @@ table.cart {
     display: -ms-flex;
     display: -o-flex;
     display: flex; }
+  .widget_shopping_cart_content .coupon {
+      font-size: 1em;
+      text-align: left;
+      float: left;
+      width: 272px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex; 
+    
+      margin-left: 38px;
+    }
+      
+
 	.bonuses-payment {
     font-size: 1em;
     text-align: left;
@@ -15674,7 +15700,7 @@ table.cart {
     display: -o-flex;
     display: flex; 
 	margin-bottom: 2em;}
-    table.cart .coupon label[for="coupon_code"], table.cart .rp-donation-block .input label[for="coupon_code"] {
+    table.cart .coupon label[for="coupon_code"], table.cart .rp-donation-block .input label[for="coupon_code"], .widget_shopping_cart_content .coupon label[for="coupon_code"] {
       display: none; }
     table.cart .coupon .input-text, table.cart .rp-donation-block .input .input-text {
       border: 1px solid #dddddd;
@@ -15683,7 +15709,13 @@ table.cart {
       border-bottom-right-radius: 0;
       padding: 0.625em 1.8em;
       width: 60%; }
-  
+      .widget_shopping_cart_content .coupon .input-text {
+        border: 1px solid #dddddd;
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.625em 0.8em;
+        width: 60%; }  
 .bonuses-payment label[for="bonuses_code"] {
       display: none; }
 .bonuses-payment .input-text {
@@ -15712,6 +15744,16 @@ table.cart {
       position: relative;
       max-height: 50px;
       background-color: #333e48; }
+  .widget_shopping_cart_content .coupon .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -4px;
+        font-size: 0.938em;
+        padding: 0.8em 1.856em;
+        font-weight: normal;
+        position: relative;
+        max-height: 50px;
+        background-color: #333e48; }
 .bonuses-payment .button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
