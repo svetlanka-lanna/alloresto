@@ -16592,7 +16592,8 @@ p.order-again .button:after {
     display: block;
     margin-left: 0;
     width: 100%;
-    text-align: center; }
+    text-align: center; 
+	float: left;}
 .bonuses-payment .button {
     display: block;
     margin-left: 0;
@@ -16900,6 +16901,10 @@ p.order-again .button:after {
     margin-top: 0; } }
 
 @media (max-width: 480px) {
+	.search-mainpage form input::-webkit-input-placeholder {font-size: 0.716em;}
+.search-mainpage form input::-moz-placeholder {font-size: 0.716em;}       
+.search-mainpage form input:-moz-placeholder {font-size: 0.716em;}
+.search-mainpage form input:-ms-input-placeholder {font-size: 0.716em;}
 	.section-tabs .nav .nav-item {
 		width: 30%;
 	}
@@ -17849,12 +17854,13 @@ ul.products li.product ul.products li.product .ywapo_input_container_radio, .pro
 	.woocommerce-tabs {
 		padding-top: 30px;
 	}
-	
+
 }
 
 @media (max-width: 375px) {
 	.section-products-with-gallery ul.products li.product .product-image-wrapper {
 		min-height: 200px;
 	}
+	
 	
 }
