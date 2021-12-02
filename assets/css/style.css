@@ -3110,7 +3110,7 @@ select {
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    z-index: 10000;
+    z-index: 1000;
     margin-bottom: 0;
 }
 .ywapo_input_container_radio_more .ywapo_label_tag_position_after:hover {
@@ -3879,6 +3879,110 @@ select {
   background: url(./images/animate-star-sprite.png) repeat-y 0 0, #ff3e4c;
 }
 
+.basket-gift-container {
+  margin-bottom: 10px;
+}
+.basket-gift-no-min-sum {
+  margin-top: 15px;
+}
+.basket-gift-no-min-sum {
+  background: url(./images/basket-gift-footer.png) no-repeat;
+  height: 151px;
+  color: white;
+  background-size: cover;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+.need-spend-icon svg {
+  position: absolute;
+  left: 40px;
+  top: -4px;
+  margin: auto;
+  bottom: 0;
+}
+.need-spend-cont {
+  right: 40px;
+  top: 36px;
+}
+.need-spend {
+  line-height: 1;
+  padding-top: 5px;
+  font-size: 33px;
+}
+.need-spend .currency {
+  font-size: 33px;
+  padding-left: 5px;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .gift-sticky {
+    display: none;
+  }
+  .gift-info-mobile-wrapper {
+    display: none;
+  }
+  .gift-info-mobile-wrapper .mod-container-inner-item {
+    position: relative;
+    box-shadow: 0 5px 30px 0 rgb(81 92 98 / 20%);
+    -webkit-box-shadow: 0 5px 30px 0 rgb(81 92 98 / 20%);
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale(0.96);
+    background: none;
+    border-radius: 6px;
+    border: none;
+    transition: opacity 150ms ease 0s, transform;
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 320px;
+    height: auto;
+    min-height: 188px;
+    opacity: 1;
+    transform: scale(1);
+    padding: 0;
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 0;
+    padding: 0;
+}
+.gift-info-mobile-wrapper.mod-wrapper .close_modif {
+  position: absolute;
+  right: 11px;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  font-size: 1.5em;
+  color: #fff;
+}
+.need-spend-icon {
+  float: left;
+}
+.need-spend-icon svg {
+  position: absolute;
+  left: 18px;
+  top: -4px;
+  margin: auto;
+  bottom: 0;
+}
+
+.need-spend-cont {
+  margin-right: 17px;
+  margin-top: 30px;
+  float: right;
+}
+
+
+
+}
 
 
 
